@@ -11,6 +11,7 @@ export const sectionTwo = () => {
         item.addEventListener('click', (e) => {
             layer.style.display = "flex";
             cart.style.backgroundImage = `url(${e.target.getAttribute('src')})`;
+            console.log(cart.style.backgroundImage)
             currentIndex = index;
         });
     });
@@ -42,7 +43,7 @@ export const sectionTwo = () => {
     function updateCartBackground() {
         cart.style.backgroundImage = `url(${carts[currentIndex].getAttribute('src')})`;
         // console.log(carts[currentIndex].getAttribute('src'));
-        // console.log( cart.style.backgroundImage);
+        console.log( cart.style.backgroundImage);
     }
 
     document.addEventListener('keydown', (e) => {
