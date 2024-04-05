@@ -1,0 +1,71 @@
+/* Slider 2 */
+#sectionTwo {
+    background-color: #00DBDE;
+    background-image: linear-gradient(293deg, #00DBDE 0%, #FC00FF 50%, #bfbfbf 100%);
+    padding-block: 2rem;
+    height: auto;
+    display: none;
+    padding-top: 5rem;
+    
+}
+
+#carts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+figure {
+    cursor: pointer;
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+
+}
+
+figure img {
+    min-height: 250px;
+    object-fit: cover;
+}
+
+#layer {
+    position: fixed;
+    bottom: 0;
+    top: 50px;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+#cart {
+    background-image: url(./images/1-baby.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#cart i {
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: crimson;
+}

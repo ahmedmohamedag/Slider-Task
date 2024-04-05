@@ -1,0 +1,58 @@
+/* تعيين خصائص الهيدر */
+header {
+    background: #3b3939;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 22;
+}
+
+/* تعيين تباعد داخل عنصر الناف */
+nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-bars{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    display: none;
+}
+#menu-bars:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+#menu-bars .fa-xmark{
+    color: rgb(236, 14, 14);
+}
+
+/* تنسيق عناصر القائمة */
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* تعيين خصائص عنصر القائمة */
+li {
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* تحديد الألوان عند تحويم الماوس أو عند تحديد العنصر */
+li:hover, .active {
+    color: rgb(39, 216, 118);
+}

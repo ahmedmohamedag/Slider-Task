@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="babies images. " />
+    <meta name="keywords" content="Babies , Baby" />
+    <meta name="rating" content="General" />
+    <title>Beautiful Babies</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/sectionOne.css">
+    <link rel="stylesheet" href="style/sectionTwo.css">
+    <link rel="stylesheet" href="style/globle.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="">
+          <li data-target="slidOne"class="active" >Slide One</li>
+          <li data-target="slidTwo">Slide Two</li>
+        </ul>
+        <div id="menu-bars">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark hidden"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="wrapper"  data-target="slidOne">
+        <div class="slider">
+          <div class="control">
+            <button id="circle-left" class="fa-solid fa-circle-chevron-left"></button>
+            <button id="circle-right" class="fa-solid fa-circle-chevron-right"></button>
+          </div>
+          <img src="images/1-baby.jpg" alt="baby Image" />
+          <img src="images/2-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/6-baby.jpg" alt="baby Image" />
+          <img src="images/7-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/1-baby.jpg" alt="baby Image" />
+          <img src="images/2-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/6-baby.jpg" alt="baby Image" />
+          <img src="images/7-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+        </div>
+      </section>
+      <section id="sectionTwo" data-target="slidTwo">
+        <div id="carts" class="container">
+          <figure id="figure">
+            <img src="images/1-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/2-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/3-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/4-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/5-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/6-baby.jpg" alt="baby Image" />
+          </figure>
+        </div>
+        <!-- Overlay -->
+        <div id="layer">
+          <div id="cart">
+            <i id="left" class="fa-solid fa-arrow-left"></i>
+            <i id="right" class="fa-solid fa-arrow-right"></i>
+            <i id="close" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>
