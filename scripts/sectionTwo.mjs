@@ -10,7 +10,7 @@ export const sectionTwo = () => {
     carts.forEach((item, index) => {
         item.addEventListener('click', (e) => {
             layer.style.display = "flex";
-            cart.style.backgroundImage = `url(/${e.target.getAttribute('src')})`;
+            cart.style.backgroundImage = `url(${e.target.getAttribute('src')})`;
             currentIndex = index;
         });
     });
@@ -40,7 +40,9 @@ export const sectionTwo = () => {
     }
 
     function updateCartBackground() {
-        cart.style.backgroundImage = `url(/${carts[currentIndex].getAttribute('src')})`;
+        cart.style.backgroundImage = `url(${carts[currentIndex].getAttribute('src')})`;
+        // console.log(carts[currentIndex].getAttribute('src'));
+        // console.log( cart.style.backgroundImage);
     }
 
     document.addEventListener('keydown', (e) => {
